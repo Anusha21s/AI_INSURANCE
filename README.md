@@ -16,30 +16,30 @@ No insurance product cared.
 
 ---
 
-##  Who is our user?
+#  Who is our user?
 
-  RiderNet is built for **gig delivery partners**, but not all riders are the same.
+RiderNet is built for gig delivery partners — but not all riders are the same.
 
 ### 1. Full-Time Rider (Karthik)
 
-* Depends entirely on delivery income
+* Depends completely on delivery income
 * Highly affected by weather disruptions
 
 ### 2. Part-Time Rider (Student / Freelancer)
 
-* Works only during peak hours
-* Needs flexible, low-cost protection
+* Works during peak hours
+* Needs flexible and affordable protection
 
 ### 3. Rural / Semi-Urban Rider
 
 * Faces GPS inaccuracies
 * Has unstable internet connectivity
 
-   Our system is designed to work **fairly across all these personas**.
+ RiderNet ensures fairness and protection across all these personas.
 
 ---
 
-##  Problem Statement
+#  Problem Statement
 
 Delivery partners face:
 
@@ -47,7 +47,7 @@ Delivery partners face:
 * No protection for lost wages
 * No formal financial safety net
 
-### Existing Systems Fail
+## Existing Systems Fail
 
 | System            | Limitation                       |
 | ----------------- | -------------------------------- |
@@ -58,7 +58,7 @@ Delivery partners face:
 
 ---
 
-##  Our Solution — RiderNet
+#  Our Solution — RiderNet
 
 **Parametric Income Protection for Gig Workers**
 
@@ -66,9 +66,9 @@ Automatic payouts triggered by real-world conditions — no claims, no delays.
 
 ---
 
-##  Smart Payout Triggers
+#  Smart Payout Triggers
 
-| Trigger Condition      | Payout  |
+| Condition              | Payout  |
 | ---------------------- | ------- |
 | Rain > 64.4 mm         | Full    |
 | Heat > 45°C            | 50%     |
@@ -78,7 +78,7 @@ Automatic payouts triggered by real-world conditions — no claims, no delays.
 
 ---
 
-# 🚨 Adversarial Defense & Anti-Spoofing Strategy
+#  Adversarial Defense & Anti-Spoofing Strategy
 
 ## The Attack
 
@@ -89,7 +89,7 @@ Parametric systems trust data, not presence.
 
 ---
 
-##  Our Multi-Layer Defense System
+##  Multi-Layer Defense System
 
 ### Layer 1 — GPS & Physics Validation
 
@@ -167,13 +167,13 @@ We construct a **claim graph**:
 | 61–80  | Manual review  |
 | 81–100 | Block + appeal |
 
-### Rider Protection Mechanisms
+## Rider Protection Mechanisms
 
 * Appeal system (video proof)
 * Rural flexibility (2/5 signals allowed)
 * Trust score boost after false flags
 
- Genuine riders like Karthik show **consistent behavior and multi-signal presence**, ensuring they are **never unfairly blocked**.
+ Genuine riders like Karthik show consistent behavior and pass verification without friction.
 
 ---
 
@@ -183,36 +183,36 @@ We construct a **claim graph**:
 
   * Weather risk
   * Rider history
-  * Location risk profile
+  * Location risk
 
 * **Isolation Forest** → Detects anomalies such as:
 
   * Fake GPS patterns
   * Sudden claim spikes
-  * Unusual rider behavior
+  * Unusual behavior
 
 * **Prophet** → Forecasts:
 
-  * Weather risks
-  * High-claim probability periods
+  * Weather disruptions
+  * High-risk periods
 
- Together, these models create a **predictive + defensive system**.
+ Together, they form a **predictive + defensive AI system**.
 
 ---
 
-# ⚙️ System Architecture
+#  System Architecture
 
-1. Rider app sends: GPS, activity, and device data
+1. Rider app sends GPS, device, and activity data
 2. Backend validates multi-signal inputs
 3. AI models analyze risk & fraud probability
 4. Decision engine evaluates claim
-5. Payout triggered instantly or flagged for review
+5. Payout triggered instantly or flagged
 
 ---
 
 #  Pricing Model
 
-Weekly — aligned with rider income
+Weekly subscription aligned with rider income
 
 Base: ₹29 + Risk Score Adjustment
 
@@ -271,9 +271,9 @@ UI adapts emotionally during disruptions
 
 #  Why RiderNet is Different
 
-* Not insurance → **real-time income protection**
+* Not traditional insurance → **real-time income protection**
 * Not GPS-dependent → **multi-signal verification system**
-* Not reactive → **predictive AI-driven model**
+* Not reactive → **predictive AI-driven system**
 * Not individual-focused → **fraud network detection**
 
 ---
@@ -282,9 +282,9 @@ UI adapts emotionally during disruptions
 
 1. Rider registers
 2. Premium calculated dynamically
-3. Event detected (rain / heat / etc.)
-4. Fraud detection system runs
-5. Payout processed instantly or reviewed
+3. Event detected
+4. Fraud checks executed
+5. Payout processed
 
 ---
 
@@ -320,6 +320,6 @@ That’s the goal.
 
 ---
 
-##  RiderNet
+## 🛵 RiderNet
 
 **Because no rider should lose income to the weather.**
