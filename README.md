@@ -1,33 +1,53 @@
+# 🛵 RiderNet
 
-🛵 RiderNet
+## ₹140.
 
-₹140.
-That's what Karthik earned last Wednesday.
+That’s what Karthik earned last Wednesday.
+
 He planned for ₹700.
 School fees were due Friday.
 His bike EMI hits on the 5th.
+
 The rain didn’t care.
 The app didn’t care.
 No insurance product cared.
-We did.
 
-He keeps the city fed.
-The city never kept him safe.
-Until RiderNet.
+**We did.**
 
-About This Project
-This is not a typical README.
-This is the story of Karthik, a delivery partner — and the system that should have protected him.
-Every feature in RiderNet answers one question:
-“Does this actually help the rider?”
+---
 
-Problem Statement
+##  Who is our user?
+
+  RiderNet is built for **gig delivery partners**, but not all riders are the same.
+
+### 1. Full-Time Rider (Karthik)
+
+* Depends entirely on delivery income
+* Highly affected by weather disruptions
+
+### 2. Part-Time Rider (Student / Freelancer)
+
+* Works only during peak hours
+* Needs flexible, low-cost protection
+
+### 3. Rural / Semi-Urban Rider
+
+* Faces GPS inaccuracies
+* Has unstable internet connectivity
+
+   Our system is designed to work **fairly across all these personas**.
+
+---
+
+##  Problem Statement
+
 Delivery partners face:
-No income during disruptions
-No protection for lost wages
-No formal financial safety net
 
-Existing Systems Fail
+* No income during disruptions
+* No protection for lost wages
+* No formal financial safety net
+
+### Existing Systems Fail
 
 | System            | Limitation                       |
 | ----------------- | -------------------------------- |
@@ -36,162 +56,270 @@ Existing Systems Fail
 | Platforms         | No downtime compensation         |
 | Loans             | Increase debt                    |
 
+---
 
-Our Solution — RiderNet
-Parametric Income Protection for Gig Workers
-Automatic payouts triggered by real-world events.
+##  Our Solution — RiderNet
 
-Smart Payout Triggers
-| Trigger  | Condition      | Payout  |
-| -------- | -------------- | ------- |
-| Rain     | > 64.4mm       | Full    |
-| Heat     | > 45°C         | 50%     |
-| AQI      | > 400          | Partial |
-| Flood    | Govt confirmed | Full    |
-| Bandh    | Verified       | Full    |
+**Parametric Income Protection for Gig Workers**
 
+Automatic payouts triggered by real-world conditions — no claims, no delays.
 
+---
 
-Adversarial Defense & Anti-Spoofing Strategy
-The Attack
+##  Smart Payout Triggers
+
+| Trigger Condition      | Payout  |
+| ---------------------- | ------- |
+| Rain > 64.4 mm         | Full    |
+| Heat > 45°C            | 50%     |
+| AQI > 400              | Partial |
+| Flood (Govt confirmed) | Full    |
+| Bandh (Verified)       | Full    |
+
+---
+
+# 🚨 Adversarial Defense & Anti-Spoofing Strategy
+
+## The Attack
+
 500 fake riders → Fake GPS → Real payouts → System drained
 
-Core Problem:
-Parametric insurance pays on data, not presence
+**Core Problem:**
+Parametric systems trust data, not presence.
 
-Our Multi-Layer Defense System
+---
 
-Layer 1 — GPS & Physics Validation
+##  Our Multi-Layer Defense System
+
+### Layer 1 — GPS & Physics Validation
+
 GPS can be faked. Physics cannot.
+
 We detect:
-  Teleportation (>5 km jump)
-  Unrealistic speeds (>40 km/h in rain)
-  No movement for long durations
-  Abnormal altitude changes
-3 violations → Claim blocked
 
-Also:
-  Mock GPS detection (isFromMockProvider)
-  Device fingerprint tracking
+* Teleportation (>5 km jump)
+* Unrealistic speeds (>40 km/h in rain)
+* No movement for long durations
+* Abnormal altitude changes
 
-Layer 2 — Behaviour Analysis
-We compare:
+ 3 violations → claim blocked
+
+Also includes:
+
+* Mock GPS detection
+* Device fingerprinting
+
+---
+
+### Layer 2 — Behavioral Analysis
+
 | Signal        | Real Rider | Fraud        |
 | ------------- | ---------- | ------------ |
-| Past activity | Regular    | None         |
-| Zone presence | Consistent | Random       |
+| Past activity | Consistent | None         |
+| Zone presence | Stable     | Random       |
 | Work pattern  | Continuous | Trigger-only |
 
+ New accounts → capped at 50% payout
 
-New accounts → 50% payout cap
+---
 
-Layer 3 — Claim Pattern Detection
-Real events → smooth claim distribution
-Fraud → sudden spike (e.g., 400 claims in minutes)
-Action: Temporary hold + verification
+### Layer 3 — Claim Pattern Detection
 
-Layer 4 — Multi-Signal Verification
-We require 3 out of 5 signals:
-  GPS
-  Cellular tower
-  Order activity
-  Weather data
-  Historical presence
-Fraud fails
-  Karthik passes → gets paid instantly
+* Real events → gradual claim distribution
+* Fraud → sudden spikes (e.g., 400 claims in minutes)
 
-Layer 5 — Fraud Ring Detection
-  We build a claim graph:
-    Nodes = claims
-    Edges = shared data (device, IP, UPI)
-  Detect entire fraud networks, not individuals
+ Action: Temporary hold + verification
 
-Layer 6 — Fairness & Risk Scoring
+---
 
-| Score  | Action           |
-| ------ | ---------------- |
-| 0–30   | Instant payout   |
-| 31–60  | Partial payout   |
-| 61–80  | Review           |
-| 81–100 | Block + appeal   |
+### Layer 4 — Multi-Signal Verification
 
+We require **3 out of 5 signals**:
 
-Rider Protection
-  Appeal system (video proof)
-  Rural flexibility (2/5 signals)
-  Trust boost after false flags
+* GPS
+* Cellular tower
+* Order activity
+* Weather data
+* Historical presence
 
-Pricing Model
-  Weekly -- aligned with rider income
-  ₹29 + Risk Score Adjustment
-  Example: ₹74.50/week
-| Tier        | Price | Coverage |
-| ----------- | ----- | -------- |
-|    Basic    | ₹29   | ₹500     |
-|    Standard | ₹49   | ₹750     |
-|    Premium  | ₹79   | ₹900     |
+ Fraud fails
+ Genuine riders pass smoothly
 
-AI/ML Engine
+---
 
-| System          | Tech             | Role              |
-| --------------- | ---------------- | ----------------- |
-| Premium Engine  | XGBoost          | Pricing           |
-| Fraud Detection | Isolation Forest | Anomaly detection |
-| Forecasting     | Prophet          | Risk prediction   |
+### Layer 5 — Fraud Ring Detection
 
+We construct a **claim graph**:
 
-Workflow
-  1. Rider registers
-  2. Premium calculated
-  3. Event detected
-  4. Fraud checks run
-  5. Payout processed
+* Nodes → claims
+* Edges → shared device / IP / UPI
 
+ Detects coordinated fraud networks, not just individuals
 
-App Features
-  Multi-language UI
-  2-min onboarding
-  Real-time alerts
-  Earnings dashboard
-  Rainy Day Mode
-  UI adapts emotionally during disruptions
+---
 
-Tech Stack
-  Frontend
-  React + Vite
-  TailwindCSS
-  Backend
-  FastAPI
-  PostgreSQL
-  AI/ML
-  XGBoost
-  Isolation Forest
-  Prophet
-  APIs
-  OpenWeatherMap
-  OpenAQ
-  NewsAPI
+### Layer 6 — Fairness & Risk Scoring
 
-Status
-  Phase 1 — Ideation
-  Problem validated
-  System designed
-  Prototype pending
+| Score  | Action         |
+| ------ | -------------- |
+| 0–30   | Instant payout |
+| 31–60  | Partial payout |
+| 61–80  | Manual review  |
+| 81–100 | Block + appeal |
 
-Team
-  Bannari Amman Institute of Technology, Erode
-    Anusha S — Full Stack
-    Abinaya S — Backend & ML
-    Jeyashri M — UI/UX
-    Kamalikaa K — Data
+### Rider Protection Mechanisms
 
-Final Thought
+* Appeal system (video proof)
+* Rural flexibility (2/5 signals allowed)
+* Trust score boost after false flags
+
+ Genuine riders like Karthik show **consistent behavior and multi-signal presence**, ensuring they are **never unfairly blocked**.
+
+---
+
+#  How Our AI Works
+
+* **XGBoost** → Calculates premium based on:
+
+  * Weather risk
+  * Rider history
+  * Location risk profile
+
+* **Isolation Forest** → Detects anomalies such as:
+
+  * Fake GPS patterns
+  * Sudden claim spikes
+  * Unusual rider behavior
+
+* **Prophet** → Forecasts:
+
+  * Weather risks
+  * High-claim probability periods
+
+ Together, these models create a **predictive + defensive system**.
+
+---
+
+# ⚙️ System Architecture
+
+1. Rider app sends: GPS, activity, and device data
+2. Backend validates multi-signal inputs
+3. AI models analyze risk & fraud probability
+4. Decision engine evaluates claim
+5. Payout triggered instantly or flagged for review
+
+---
+
+#  Pricing Model
+
+Weekly — aligned with rider income
+
+Base: ₹29 + Risk Score Adjustment
+
+Example: ₹74.50/week
+
+---
+
+##  Plans
+
+| Tier     | Price | Coverage |
+| -------- | ----- | -------- |
+| Basic    | ₹29   | ₹500     |
+| Standard | ₹49   | ₹750     |
+| Premium  | ₹79   | ₹900     |
+
+---
+
+#  App Features
+
+* Multi-language UI
+* 2-minute onboarding
+* Real-time alerts
+* Earnings dashboard
+
+###  Rainy Day Mode
+
+UI adapts emotionally during disruptions
+
+---
+
+#  Tech Stack
+
+### Frontend
+
+* React + Vite
+* TailwindCSS
+
+### Backend
+
+* FastAPI
+* PostgreSQL
+
+### AI/ML
+
+* XGBoost
+* Isolation Forest
+* Prophet
+
+### APIs
+
+* OpenWeatherMap
+* OpenAQ
+* NewsAPI
+
+---
+
+#  Why RiderNet is Different
+
+* Not insurance → **real-time income protection**
+* Not GPS-dependent → **multi-signal verification system**
+* Not reactive → **predictive AI-driven model**
+* Not individual-focused → **fraud network detection**
+
+---
+
+#  Workflow
+
+1. Rider registers
+2. Premium calculated dynamically
+3. Event detected (rain / heat / etc.)
+4. Fraud detection system runs
+5. Payout processed instantly or reviewed
+
+---
+
+#  Status
+
+Phase 1 — Ideation
+
+* Problem validated
+* System designed
+* Prototype in progress
+
+---
+
+#  Team
+
+Bannari Amman Institute of Technology, Erode
+
+* Anusha S — Full Stack
+* Abinaya S — Backend & ML
+* Jeyashri M — UI/UX
+* Kamalikaa K — Data
+
+---
+
+#  Final Thought
+
 Friday morning.
 School fees paid.
 Family okay.
+
 That’s not a feature.
 That’s the goal.
 
-RiderNet
-Because no rider should lose income to the weather.
+---
 
+##  RiderNet
+
+**Because no rider should lose income to the weather.**
