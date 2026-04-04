@@ -17,6 +17,7 @@ Example:
 Karthik — depends fully on daily delivery income and is highly affected by weather disruptions.
 
 🧩 Core Features Implemented
+
 1️⃣ Registration Process ✅
 Mobile number / basic details onboarding
 GPS-based location capture
@@ -42,6 +43,7 @@ Premium — ₹79
 Activate / deactivate policy
 View active coverage
 Weekly renewal simulation
+
 3️⃣ Dynamic Premium Calculation (AI-Based) ✅
 
 We implemented a rule-based + ML-ready hybrid model.
@@ -94,6 +96,7 @@ Trigger	      Condition	           Payout
 OpenWeatherMap (weather data)
 OpenAQ (air quality)
 NewsAPI (bandh detection — mock logic)
+
 🛡️ Fraud Detection (Phase 2 - Basic)
 
 (Advanced system will be implemented in Phase 3)
@@ -126,6 +129,7 @@ External APIs:
   - Weather
   - AQI
   - News (mock)
+  - 
 🔄 Workflow (End-to-End)
 Rider registers
 Selects weekly plan
@@ -135,6 +139,7 @@ Disruption detected (e.g., heavy rain)
 Claim auto-triggered
 Fraud checks executed
 Payout decision generated
+
 📊 Demo Scenario
 
 Scenario: Heavy Rain Day
@@ -152,6 +157,7 @@ Earnings protected
 Real-time alerts:
 “Heavy rain detected — claim initiated”
 Multi-language support (planned)
+
 💻 Tech Stack
 Frontend
 React
