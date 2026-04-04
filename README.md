@@ -19,6 +19,7 @@ Karthik — depends fully on daily delivery income and is highly affected by wea
 Core Features Implemented
 
 1️.Registration Process ✅
+
 Mobile number / basic details onboarding
 GPS-based location capture
 Device fingerprinting initialized
@@ -30,6 +31,7 @@ Rural
 Output: Rider profile created with a baseline risk score
 
 2️.Insurance Policy Management ✅
+
 Weekly subscription model implemented
 
 Plans:
@@ -45,6 +47,7 @@ View active coverage
 Weekly renewal simulation
 
 3️.Dynamic Premium Calculation (AI-Based) ✅
+
 
 We implemented a rule-based + ML-ready hybrid model.
 
@@ -71,6 +74,7 @@ Final Premium = ₹42/week
 ML-ready architecture using XGBoost (planned integration)
 
 4️.Claims Management (Zero-Touch System) ✅
+
 
 Automated Claim Flow:
 
