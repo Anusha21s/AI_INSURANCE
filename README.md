@@ -174,6 +174,7 @@ APIs
 OpenWeatherMap
 OpenAQ
 NewsAPI (mock integration)
+
 📦 Repository Structure
 RiderNet/
 │
