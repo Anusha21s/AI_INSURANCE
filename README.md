@@ -1,24 +1,24 @@
-🎯 Phase 2 Goal
+Phase 2 Goal
 
 “Protect Your Worker”
 
 In this phase, RiderNet evolves from concept to a functional prototype that demonstrates:
 
-✅ Rider onboarding
-✅ Weekly policy creation
-✅ Dynamic premium calculation
-✅ Automated claim triggering
-✅ Smart claim validation & payout decision
-👤 Target Persona
+Rider onboarding
+Weekly policy creation
+Dynamic premium calculation
+Automated claim triggering
+Smart claim validation & payout decision
+Target Persona
 
 Focused Persona: Full-Time Food Delivery Rider (e.g., Swiggy / Zomato)
 
 Example:
 Karthik — depends fully on daily delivery income and is highly affected by weather disruptions.
 
-🧩 Core Features Implemented
+Core Features Implemented
 
-1️⃣ Registration Process ✅
+1️.Registration Process ✅
 Mobile number / basic details onboarding
 GPS-based location capture
 Device fingerprinting initialized
@@ -27,9 +27,9 @@ Full-time
 Part-time
 Rural
 
-👉 Output: Rider profile created with a baseline risk score
+Output: Rider profile created with a baseline risk score
 
-2️⃣ Insurance Policy Management ✅
+2️.Insurance Policy Management ✅
 Weekly subscription model implemented
 
 Plans:
@@ -38,13 +38,13 @@ Basic — ₹29
 Standard — ₹49
 Premium — ₹79
 
-👉 Features:
+Features:
 
 Activate / deactivate policy
 View active coverage
 Weekly renewal simulation
 
-3️⃣ Dynamic Premium Calculation (AI-Based) ✅
+3️.Dynamic Premium Calculation (AI-Based) ✅
 
 We implemented a rule-based + ML-ready hybrid model.
 
@@ -68,9 +68,9 @@ Base = ₹29
 
 Final Premium = ₹42/week
 
-👉 ML-ready architecture using XGBoost (planned integration)
+ML-ready architecture using XGBoost (planned integration)
 
-4️⃣ Claims Management (Zero-Touch System) ✅
+4️.Claims Management (Zero-Touch System) ✅
 
 Automated Claim Flow:
 
@@ -82,22 +82,22 @@ Policy validity
 Claim automatically created
 Fraud checks applied
 Decision generated:
-✅ Approved → payout triggered
-⚠️ Suspicious → flagged
-🌦️ Parametric Triggers Implemented
+Approved → payout triggered
+Suspicious → flagged
+Parametric Triggers Implemented
 Trigger	      Condition	           Payout
-🌧 Rain     	> 60 mm	              100%
-🔥 Heat	     > 45°C	               50%
-🌫 AQI	      > 400	                Partial
-🚫 Bandh	     Verified (mock API)	 100%
+Rain     	> 60 mm	              100%
+Heat	     > 45°C	               50%
+AQI	      > 400	                Partial
+Bandh	     Verified (mock API)	 100%
 
-👉 APIs Used:
+APIs Used:
 
 OpenWeatherMap (weather data)
 OpenAQ (air quality)
 NewsAPI (bandh detection — mock logic)
 
-🛡️ Fraud Detection (Phase 2 - Basic)
+Fraud Detection (Phase 2 - Basic)
 
 (Advanced system will be implemented in Phase 3)
 
@@ -108,11 +108,11 @@ No teleportation (>5 km jump detection)
 Rider activity validation (must be active)
 New user payout cap (50%)
 
-👉 Output:
+Output:
 
 Risk score generated
 Claim allowed or flagged
-⚙️ System Architecture
+System Architecture
 Frontend (React + Vite)
         ↓
 API Layer (FastAPI)
@@ -130,7 +130,7 @@ External APIs:
   - AQI
   - News (mock)
   - 
-🔄 Workflow (End-to-End)
+Workflow (End-to-End)
 Rider registers
 Selects weekly plan
 Premium calculated dynamically
@@ -140,7 +140,7 @@ Claim auto-triggered
 Fraud checks executed
 Payout decision generated
 
-📊 Demo Scenario
+Demo Scenario
 
 Scenario: Heavy Rain Day
 
@@ -149,7 +149,7 @@ Rain > 65 mm detected
 System triggers claim automatically
 Fraud check passed
 ₹750 payout approved instantly
-📱 UI Features (Prototype)
+UI Features (Prototype)
 Simple onboarding (2 minutes)
 Dashboard:
 Active policy
@@ -158,7 +158,7 @@ Real-time alerts:
 “Heavy rain detected — claim initiated”
 Multi-language support (planned)
 
-💻 Tech Stack
+Tech Stack
 Frontend
 React
 Vite
@@ -175,7 +175,7 @@ OpenWeatherMap
 OpenAQ
 NewsAPI (mock integration)
 
-📦 Repository Structure
+Repository Structure
 RiderNet/
 │
 ├── frontend/
@@ -189,8 +189,8 @@ RiderNet/
 ├── docs/
 └── README.md
 
-💡 Final Thought
+Final Thought
 
 RiderNet is no longer just an idea — it is a working income protection system.
 
-🛵 Because no rider should lose income to the weather.
+Because no rider should lose income to the weather.
